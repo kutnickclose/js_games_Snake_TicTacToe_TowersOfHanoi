@@ -1,0 +1,36 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 50px;
+}
+
+body {
+  background-color: #cecece;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.towers {
+  width: 100%;
+}
+
+.tower {
+  display: inline-block;
+  width: 30%;
+  /*border: thin solid grey;*/
+  background: #ffffff;
+  padding: 1%;
+  margin: 0.5%;
+}
+
+.tower .disc {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+div.filled {
+  background: tomato;
+}

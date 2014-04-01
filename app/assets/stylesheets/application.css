@@ -1,0 +1,94 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-top: 50px;
+}
+
+body {
+  background-color: #cecece;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.towers {
+  width: 100%;
+}
+
+.tower {
+  display: inline-block;
+  width: 30%;
+  /*border: thin solid grey;*/
+  background: #ffffff;
+  padding: 1%;
+  margin: 0.5%;
+}
+
+.tower .disc {
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+div.filled {
+  background: tomato;
+}
+
+
+  .row div {
+    float: left;
+    /*border: #cecece thin solid;*/
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #fff;
+    font-size: 5em;
+  }
+
+  .tic-tac-body {
+    background-color: #cecece;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  .row div.x {
+    color: white;
+    background-color: tomato;
+  }
+
+  .row div.o {
+    color: white;
+    background-color: lightblue;
+  }
+
+  .row:after {
+    display: block;
+    clear: both;
+    content: '.';
+    font-size: 0;
+  }
+
+  .tic-tac-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    margin-top: 0px;
+  }
+	
+	.left {
+		text-align: left;
+	}

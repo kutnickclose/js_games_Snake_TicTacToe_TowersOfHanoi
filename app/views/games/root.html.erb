@@ -1,0 +1,38 @@
+<%= javascript_include_tag "application" %>
+<head>
+    <title>TicTacToe</title>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+</head>
+<body class="tic-tac-body">
+		<p class="left"><%= link_to("TIC TAC TOE", "/") %> |  <%= link_to("TOWERS OF HANOI", "/hanoi") %></p>
+    <div class="tic-tac-container">
+      <h1>Tic Tac Toe</h1>
+			<%= link_to("Restart", root_url)%>
+      <h2 id="instructions"> It's x's turn </h2>
+      <div class="row">
+        <div data-pos="[0,0]"></div>
+        <div data-pos="[0,1]"></div>
+        <div data-pos="[0,2]"></div>
+      </div>
+      <div class="row">
+        <div data-pos="[1,0]"></div>
+        <div data-pos="[1,1]"></div>
+        <div data-pos="[1,2]"></div>
+      </div>
+      <div class="row">
+        <div data-pos="[2,0]"></div>
+        <div data-pos="[2,1]"></div>
+        <div data-pos="[2,2]"></div>
+      </div>
+    </div>
+
+
+    <script>
+      $(function () {
+        var game = new TTT.Game();
+        var ui = new TTT.UI(game);
+        ui.start();
+      });
+    </script>
+
+</body>

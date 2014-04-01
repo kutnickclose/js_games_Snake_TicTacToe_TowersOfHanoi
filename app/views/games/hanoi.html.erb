@@ -1,0 +1,24 @@
+<head>
+    <title>Hanoi</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+</head>
+<body>
+	<p class="left"><%= link_to("TIC TAC TOE", "/") %> |  <%= link_to("TOWERS OF HANOI", "/hanoi") %></p>
+    <div class="container">
+      <h1>Hanoi</h1>
+			<p> Directions: get all 6 blocks into the right column.  To move a block, click the column from which you want to move a block from and then the column you want to move the block to.  Blocks with higher numbers may not be placed on blocks with a lower number</p>
+      <div class="towers"></div>
+    </div>
+
+    <script>
+      $(function () {
+        var game = new Hanoi.Game();
+        var ui = new Hanoi.UI(game);
+
+        ui.start();
+      });
+    </script>
+
+</body>
