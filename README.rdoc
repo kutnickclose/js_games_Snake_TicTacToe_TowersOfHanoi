@@ -1,5 +1,7 @@
 == Games
 
-Tic Tac Toe - http://timkutnick-games.herokuapp.com/
+Snake - http://timkutnick-games.herokuapp.com/snake
+
+Tic Tac Toe - http://timkutnick-games.herokuapp.com
 
 Towers of Hanoi - http://timkutnick-games.herokuapp.com/hanoi
