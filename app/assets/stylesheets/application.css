@@ -92,3 +92,34 @@ div.filled {
 	.left {
 		text-align: left;
 	}
+	
+	.cell {
+	  float: left;
+	  height: 20px;
+	  width: 20px;
+	  background: #eee;
+
+	  border: solid gray 1px;
+	}
+
+	.snake {
+	  background-color: green
+	}
+
+	.apple {
+	  background-color: red;
+	}
+
+	.snake-row {
+	  clear: both;
+	}
+
+	.snake-game {
+		width: 100%;
+		text-align: center;
+	}
+
+	#snake-grid {
+		margin-left: 41%;
+
+	}
